@@ -28,6 +28,13 @@ yarn-error.log*
 .env*.local
 .env.local
 
+# tokens and secrets
+*_token.txt
+*token*.txt
+*secret*.txt
+github_token.txt
+supabase_admin_info.txt
+
 # vercel
 .vercel
 
