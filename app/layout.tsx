@@ -21,12 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
-          rel="stylesheet"
-        />
+        {/* Source Han Serif KR - 로컬 폰트 파일 사용 */}
       </head>
       <body>{children}</body>
     </html>

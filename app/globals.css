@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Source Han Serif KR Variable Font 정의 */
+@font-face {
+  font-family: 'Source Han Serif KR';
+  src: url('/fonts/SourceHanSerifK-VF.otf') format('opentype');
+  font-weight: 200 900; /* Variable Font는 모든 weight 범위 지원 */
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   html,
   body {
     @apply bg-base text-text antialiased;
-    font-family: 'Nanum Myeongjo', 'Noto Serif KR', 'Gowun Batang', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
+    font-family: 'source-han-serif-kr', 'Source Han Serif KR', 'Noto Serif KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-display: swap;
@@ -15,7 +24,7 @@
   /* 모든 텍스트 요소에 폰트 적용 */
   h1, h2, h3, h4, h5, h6,
   p, span, div, a, button, input, textarea, select, label {
-    font-family: 'Nanum Myeongjo', 'Noto Serif KR', 'Gowun Batang', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
+    font-family: 'source-han-serif-kr', 'Source Han Serif KR', 'Noto Serif KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
   }
 }
 
