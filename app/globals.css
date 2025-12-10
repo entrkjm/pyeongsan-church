@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 나눔명조 폰트 로드 - 따뜻한 느낌 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+@layer base {
+  body {
+    @apply bg-base text-text antialiased;
+    font-family: 'Nanum Myeongjo', 'Noto Serif KR', 'Gowun Batang', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
+  }
+}
+
+@layer components {
+  /* 공통 카드 스타일 */
+  .card {
+    @apply bg-base-light rounded-card p-6 shadow-sm;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:scale-[1.02];
+  }
+  
+  /* 버튼 스타일 */
+  .btn-primary {
+    @apply px-8 py-4 rounded-full bg-accent-purple text-white font-medium 
+           transition-all duration-300 hover:bg-accent-purple-light 
+           hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-4 rounded-full bg-warm-gold text-white font-medium 
+           transition-all duration-300 hover:opacity-90 
+           hover:scale-105 active:scale-95;
+  }
+  
+  /* 섹션 컨테이너 */
+  .section-container {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  /* 글래스모피즘 효과 */
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+  
+  /* Bento Grid 아이템 */
+  .bento-item {
+    @apply rounded-card bg-base-light p-6 md:p-8 shadow-sm 
+           transition-all duration-300 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Fade Up 애니메이션 유틸리티 */
+  .fade-up {
+    @apply opacity-0 translate-y-8;
+  }
+  
+  .fade-up-visible {
+    @apply opacity-100 translate-y-0 transition-all duration-700;
+  }
+}
+
+/* 스크롤 부드럽게 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 커스텀 스크롤바 (선택사항) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-base;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-text-light rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-text;
+}
