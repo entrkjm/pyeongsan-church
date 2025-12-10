@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 나눔명조 폰트 로드 - 따뜻한 느낌 */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
-
 @layer base {
+  html,
   body {
     @apply bg-base text-text antialiased;
+    font-family: 'Nanum Myeongjo', 'Noto Serif KR', 'Gowun Batang', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-display: swap;
+  }
+  
+  /* 모든 텍스트 요소에 폰트 적용 */
+  h1, h2, h3, h4, h5, h6,
+  p, span, div, a, button, input, textarea, select, label {
     font-family: 'Nanum Myeongjo', 'Noto Serif KR', 'Gowun Batang', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, serif;
   }
 }
