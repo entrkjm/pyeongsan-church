@@ -166,11 +166,16 @@
    - 이미지 최적화 검토
    - 모바일 반응형 테스트
 
-### 추후 추가 (Admin 기능)
-6. **Supabase 프로젝트 생성**
-7. **인증 시스템 구현**
-8. **Admin 대시보드 개발**
-9. **갤러리/소식 관리 기능**
+### 다음 목표: Admin 기능 및 게시판 개발
+6. **Supabase 프로젝트 생성 및 설정**
+7. **Admin 인증 시스템 구현**
+8. **갤러리 게시판 개발**
+   - Admin 사진 업로드
+   - 메인 페이지 갤러리 섹션 연동
+9. **교회 공지 게시판 개발**
+10. **댓글 기능 추가** (회원가입 없이)
+
+자세한 개발 계획은 `ADMIN_DEVELOPMENT_PLAN.md` 참고
 
 ---
 
@@ -191,10 +196,11 @@
 ## 📚 참고 문서
 
 ### 프로젝트 문서
-- `QUICK_START.md`: 빠른 시작 가이드
-- `DOMAIN_SETUP.md`: 도메인 설정 가이드
-- `RECOMMENDATIONS.md`: 백엔드 솔루션 추천
-- `CONSIDERATIONS.md`: Admin 기능 고려사항
+- `ADMIN_DEVELOPMENT_PLAN.md`: Admin 기능 및 게시판 개발 계획 ⭐
+- `old/QUICK_START.md`: 빠른 시작 가이드 (참고용)
+- `old/DOMAIN_SETUP.md`: 도메인 설정 가이드 (참고용)
+- `old/RECOMMENDATIONS.md`: 백엔드 솔루션 추천 (참고용)
+- `old/CONSIDERATIONS.md`: Admin 기능 고려사항 (참고용)
 
 ### 외부 자료
 - [Next.js 문서](https://nextjs.org/docs)
@@ -241,4 +247,5 @@
 ---
 
 **프로젝트 상태**: 기본 웹사이트 완성 및 배포 완료 ✅  
-**다음 작업**: Google Analytics 설정
+**다음 목표**: Admin 기능 및 게시판 개발  
+**개발 계획**: `ADMIN_DEVELOPMENT_PLAN.md` 참고
