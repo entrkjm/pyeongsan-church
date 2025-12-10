@@ -61,7 +61,7 @@ export default function EditGallery() {
         setDescription(data.description || '');
         
         // 기존 이미지 설정
-        const images = Array.isArray(data.images) && data.images.length > 0
+        const images: string[] = Array.isArray(data.images) && data.images.length > 0
           ? data.images
           : data.thumbnail_url
           ? [data.thumbnail_url]
