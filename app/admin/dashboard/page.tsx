@@ -56,7 +56,8 @@ export default function AdminDashboard() {
               <span className="text-text-light">{user?.email}</span>
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+                className="px-5 py-2.5 rounded-md transition-all duration-200 text-sm font-medium shadow-sm hover:shadow"
+            style={{ color: '#8B6F47' }}
               >
                 로그아웃
               </button>
@@ -77,8 +78,8 @@ export default function AdminDashboard() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* 갤러리 관리 카드 */}
             <motion.div
-              whileHover={{ scale: 1.02, y: -4 }}
-              className="bg-white rounded-lg shadow-lg p-8 border border-text/10"
+              whileHover={{ scale: 1.01, y: -2 }}
+              className="bg-white rounded-lg shadow-sm p-8 border border-text/5 hover:shadow-lg transition-all duration-200"
             >
               <h3 className="text-2xl font-bold text-text mb-4">갤러리 관리</h3>
               <p className="text-text-light mb-6">
@@ -86,7 +87,8 @@ export default function AdminDashboard() {
               </p>
               <Link
                 href="/admin/gallery"
-                className="inline-block px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple-light transition-colors"
+                className="inline-block px-6 py-3.5 rounded-md transition-all duration-200 font-bold shadow-sm hover:shadow-md"
+            style={{ color: '#5D4E37' }}
               >
                 갤러리 관리하기 →
               </Link>
@@ -94,8 +96,8 @@ export default function AdminDashboard() {
 
             {/* 공지 관리 카드 */}
             <motion.div
-              whileHover={{ scale: 1.02, y: -4 }}
-              className="bg-white rounded-lg shadow-lg p-8 border border-text/10"
+              whileHover={{ scale: 1.01, y: -2 }}
+              className="bg-white rounded-lg shadow-sm p-8 border border-text/5 hover:shadow-lg transition-all duration-200"
             >
               <h3 className="text-2xl font-bold text-text mb-4">공지 관리</h3>
               <p className="text-text-light mb-6">
@@ -103,7 +105,8 @@ export default function AdminDashboard() {
               </p>
               <Link
                 href="/admin/notices"
-                className="inline-block px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple-light transition-colors"
+                className="inline-block px-6 py-3.5 rounded-md transition-all duration-200 font-bold shadow-sm hover:shadow-md"
+            style={{ color: '#5D4E37' }}
               >
                 공지 관리하기 →
               </Link>

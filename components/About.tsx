@@ -85,7 +85,7 @@ export default function About() {
                 </h3>
                 <div className="space-y-4 text-body-mobile md:text-body text-text-light leading-relaxed">
                   <p>
-                    무안 평산교회에 오신 것을 환영합니다. 저희 교회는 기독교대한성결교회 소속으로,
+                    평산성결교회에 오신 것을 환영합니다. 저희 교회는 기독교대한성결교회 소속으로,
                     하나님의 사랑과 은혜를 나누며 함께 성장하는 공동체입니다.
                   </p>
                   <p>

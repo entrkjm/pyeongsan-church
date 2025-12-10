@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/church-event-1.jpg"
-          alt="무안 평산교회 공동체"
+          alt="평산성결교회 공동체"
           fill
           className="object-cover"
           priority
@@ -47,7 +47,7 @@ export default function Hero() {
                   믿음, 소망, 사랑의 공동체
                 </p>
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-                  무안 평산교회입니다
+                  평산성결교회입니다
                 </p>
               </div>
 

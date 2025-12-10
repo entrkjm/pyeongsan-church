@@ -19,10 +19,26 @@ const config: Config = {
           DEFAULT: "#1d1d1f",
           light: "#6e6e73",
         },
-        // 강조색 - 보라색 계열 (기성 교단)
+        // 강조색 - 따뜻한 톤 (가독성 확보)
         accent: {
-          purple: "#8B5CF6",
-          "purple-light": "#A78BFA",
+          primary: "#5D4E37", // 진한 카멜 브라운 (흰색 텍스트 대비 확보)
+          "primary-light": "#6B5A47", // 중간 톤
+          "primary-dark": "#4A3D2B", // 더 진한 톤
+        },
+        // 에러/경고 색상 - 부드러운 톤
+        error: {
+          DEFAULT: "#FCA5A5", // 부드러운 살몬
+          light: "#FECACA", // 더 밝은 살몬
+          dark: "#F87171", // 약간 진한 살몬
+          bg: "#FEF2F2", // 배경용
+          border: "#FECACA", // 테두리용
+          text: "#991B1B", // 텍스트용
+        },
+        // 성공 색상
+        success: {
+          DEFAULT: "#86EFAC", // 부드러운 민트
+          light: "#A7F3D0",
+          dark: "#4ADE80",
         },
         // 따뜻한 골드/세이지 그린
         warm: {

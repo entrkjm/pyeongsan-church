@@ -16,7 +16,7 @@ export default function Footer() {
           >
             {/* 모든 정보를 한 줄에 */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-xs" style={{ color: '#1d1d1f' }}>
-              <span style={{ color: '#1d1d1f' }}>무안 평산교회</span>
+              <span style={{ color: '#1d1d1f' }}>평산성결교회</span>
               <span className="hidden md:inline" style={{ color: '#1d1d1f' }}>|</span>
               <span style={{ color: '#1d1d1f' }}>전남 무안군 현경면 함장로 84</span>
               <span className="hidden md:inline" style={{ color: '#1d1d1f' }}>|</span>
@@ -28,7 +28,7 @@ export default function Footer() {
             {/* 저작권 정보 */}
             <div className="mt-3">
               <p className="text-xs" style={{ color: '#1d1d1f' }}>
-                © {new Date().getFullYear()} 무안 평산교회. All rights reserved.
+                © {new Date().getFullYear()} 평산성결교회. All rights reserved.
               </p>
             </div>
           </motion.div>

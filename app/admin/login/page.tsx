@@ -45,7 +45,7 @@ export default function AdminLogin() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full"
+        className="bg-white rounded-lg shadow-xl p-8 md:p-10 max-w-md w-full border border-text/5"
       >
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-text mb-2">Admin 로그인</h1>
@@ -54,8 +54,8 @@ export default function AdminLogin() {
 
         <form onSubmit={handleLogin} className="space-y-6">
           {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <p className="text-red-800 text-sm">{error}</p>
+            <div className="bg-error-bg border border-error-border rounded-lg p-4">
+              <p className="text-error-text text-sm">{error}</p>
             </div>
           )}
 
@@ -69,7 +69,7 @@ export default function AdminLogin() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-text/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-purple focus:border-transparent text-text"
+              className="w-full px-4 py-3 border border-text/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-primary/30 focus:border-accent-primary/50 text-text bg-white transition-all"
               placeholder="admin@example.com"
             />
           </div>
@@ -84,7 +84,7 @@ export default function AdminLogin() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-3 border border-text/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-purple focus:border-transparent text-text"
+              className="w-full px-4 py-3 border border-text/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-primary/30 focus:border-accent-primary/50 text-text bg-white transition-all"
               placeholder="••••••••"
             />
           </div>
@@ -92,9 +92,10 @@ export default function AdminLogin() {
           <motion.button
             type="submit"
             disabled={loading}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="w-full bg-accent-purple text-white py-3 rounded-lg font-semibold hover:bg-accent-purple-light transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            whileHover={{ scale: 1.01, y: -1 }}
+            whileTap={{ scale: 0.99 }}
+            className="w-full py-3.5 rounded-md font-bold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{ color: '#5D4E37' }}
           >
             {loading ? '로그인 중...' : '로그인'}
           </motion.button>

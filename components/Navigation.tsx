@@ -22,7 +22,8 @@ export default function Navigation() {
     { name: '교회 소개', href: '#about' },
     { name: '예배 안내', href: '#worship' },
     { name: '오시는 길', href: '#location' },
-    { name: '설교/갤러리', href: '#gallery' },
+    { name: '공지사항', href: '#notices' },
+    { name: '갤러리', href: '#gallery' },
   ];
 
   return (
@@ -48,12 +49,12 @@ export default function Navigation() {
             <div className="relative w-10 h-10 md:w-12 md:h-12">
               <Image
                 src="/images/logo_img.png"
-                alt="무안 평산교회 로고"
+                alt="평산성결교회 로고"
                 fill
                 className="object-contain"
               />
             </div>
-            무안 평산교회
+            평산성결교회
           </motion.a>
 
           {/* 데스크톱 메뉴 */}

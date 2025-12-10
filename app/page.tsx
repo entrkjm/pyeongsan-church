@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import WorshipTimes from '@/components/WorshipTimes';
 import Location from '@/components/Location';
+import Notices from '@/components/Notices';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <WorshipTimes />
       <Location />
+      <Notices />
       <Gallery />
       <Footer />
     </main>
