@@ -178,7 +178,10 @@ export default function NoticesPage() {
                             {noticeNumber}
                           </span>
                           <div className="flex-1">
-                            <h3 className="text-base md:text-lg font-semibold text-[#1d1d1f] mb-1 line-clamp-2">
+                            <h3 
+                              className="text-base md:text-lg font-semibold mb-1 line-clamp-2"
+                              style={{ color: '#1d1d1f', fontWeight: 600 }}
+                            >
                               {notice.title}
                             </h3>
                             {/* 작성일 (모바일) */}

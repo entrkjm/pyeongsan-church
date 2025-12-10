@@ -257,7 +257,10 @@ export default function Notices() {
                   <div className="flex flex-col md:flex-row gap-4 md:gap-6 p-5 md:p-6">
                     {/* 텍스트 영역 (메인) */}
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-xl md:text-2xl font-bold text-text mb-2 md:mb-3 line-clamp-2">
+                      <h3 
+                        className="text-xl md:text-2xl font-bold mb-2 md:mb-3 line-clamp-2"
+                        style={{ color: '#1d1d1f' }}
+                      >
                         {currentNotice.title}
                       </h3>
                       <p 

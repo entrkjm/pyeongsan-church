@@ -152,7 +152,10 @@ export default function NoticeDetail() {
           <article className="bg-white rounded-lg shadow-xl p-8 md:p-10 border border-text/5">
             {/* 제목과 날짜 */}
             <header className="mb-8">
-              <h1 className="text-3xl md:text-4xl font-bold text-text mb-4">
+              <h1 
+                className="text-3xl md:text-4xl font-bold mb-4"
+                style={{ color: '#1d1d1f' }}
+              >
                 {notice.title}
               </h1>
               <p className="text-text-light">
