@@ -87,3 +87,4 @@ Supabase는 **Row Level Security (RLS)** 정책으로 보안을 보장합니다:
 
 **결론**: 현재 설정으로 배포해도 안전합니다. `NEXT_PUBLIC_` 접두사가 붙은 키는 클라이언트에 노출되지만, 이것은 Supabase의 정상적인 설계이며 RLS 정책으로 보안이 보장됩니다.
 
+

@@ -26,7 +26,7 @@ GitHub Personal Access Token이 Git 히스토리에 포함되어 있었습니다
 프로젝트 루트에 `tokens.local.txt` 파일 생성 (`.gitignore`에 포함됨):
 ```
 # 이 파일은 Git에 커밋되지 않습니다
-GITHUB_TOKEN=ghp_your_new_token_here
+GITHUB_TOKEN=ghp_your_token_here
 ```
 
 ### 방법 2: 시스템 환경 변수로 저장
@@ -75,4 +75,5 @@ Vercel 대시보드에서 환경 변수로 저장:
 ---
 
 **참고**: 현재 프로젝트는 Vercel을 통해 배포되므로, GitHub Personal Access Token이 반드시 필요하지 않습니다. Vercel이 GitHub 저장소에 직접 접근할 수 있습니다.
+
 
